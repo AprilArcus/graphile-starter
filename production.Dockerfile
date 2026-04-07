@@ -7,7 +7,7 @@ ARG TARGET="server"
 ################################################################################
 # Build stage 1 - `yarn build`
 
-FROM node:18-alpine as builder
+FROM node:22-alpine as builder
 # Import our shared args
 ARG NODE_ENV
 ARG ROOT_URL
